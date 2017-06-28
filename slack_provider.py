@@ -1,16 +1,17 @@
 # this file implements a basic kaktusas Slack provider
 import requests, json
 
+# Set the SECRET_URL to the one provided by Slack when you create the webhook at https://my.slack.com/services/new/incoming-webhook/
 SECRET_URL='https://hooks.slack.com/services/'
 
 def alarma(aux=''):
 
-  # Set the webhook_url to the one provided by Slack when you create the webhook at https://my.slack.com/services/new/incoming-webhook/
   slack_data = {'text': aux}
 
   response = requests.post(
       SECRET_URL, data=json.dumps(slack_data),
-      headers={'Content-Type': 'application/json'}
+      headers={'Content-Type': 'application/json'},
+      timeout=30
   )
 
   if response.status_code != 200:
