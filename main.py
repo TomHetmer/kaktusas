@@ -42,7 +42,6 @@ def main():
 	else:
 		data = {}
 		data['old_md5'] = 0
-		data['last_run'] = 0
 
 	headers = {
 		"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", 
