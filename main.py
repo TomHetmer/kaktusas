@@ -35,6 +35,7 @@ def main():
 	last_run_file = 'state.pickle'
 	notify_needed = False
 	check_md5 = 0
+	response = None
 
 	if os.path.isfile(last_run_file):
 		with open(last_run_file, 'rb') as f:
@@ -67,7 +68,7 @@ def main():
 		notify_text = "An exception was thrown in requests"
 
 
-	else:
+	if response:
 		check_ok = False
 		for line in response.text.split('class="uppercase text-drawn">'):
 
