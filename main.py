@@ -33,7 +33,7 @@ def remove_html_markup(s):
 
 def main():
 
-	last_run_file = 'state.pickle'
+	last_run_file = '/var/tmp/kaktusas.pickle'
 	notify_needed = False
 	check_md5 = 0
 	response = None
