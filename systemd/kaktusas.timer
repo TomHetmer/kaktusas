@@ -2,4 +2,4 @@
 Description=kaktusas timer unit
 
 [Timer]
-OnCalendar=Mon,Tue,Wed,Thu,Fri 8,10,12,14,16,18
+OnCalendar=Mon,Tue,Wed,Thu,Fri 8,10,12,14,16,18:37
