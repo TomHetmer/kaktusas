@@ -1,5 +1,9 @@
 [Unit]
 Description=kaktusas timer unit
+Requires=kaktusas.service
 
 [Timer]
 OnCalendar=Mon,Tue,Wed,Thu,Fri 8,10,12,14,16,18:37
+
+[Install]
+WantedBy=multi-user.target
