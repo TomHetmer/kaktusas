@@ -1,4 +1,4 @@
-# kaktusas
+# kaktusas [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 kaktus sledka (kaktus.cz dobijecka)
 
 ![GitHub Logo](/sample.png)
